@@ -3,6 +3,7 @@
 require 'rubygems'
 require 'rake'
 require 'hoe'
+require "bundler/gem_tasks"
 
 LIB_DIR = File.expand_path(File.join(File.dirname(__FILE__), 'lib'))
 $LOAD_PATH << LIB_DIR
