@@ -80,7 +80,9 @@ module Taka
         raise(NotImplementedError.new)
       end
       def createElementNS(namespaceURI, qualifiedName)
-        raise(NotImplementedError.new)
+        node = createElement(qualifiedName)
+        node.add_namespace(nil, namespaceURI)
+        #raise(NotImplementedError.new)
       end
       def createAttributeNS(namespaceURI, qualifiedName)
         raise(NotImplementedError.new)
